@@ -16,17 +16,17 @@
 // var x = 1 + (z *= 2); // 5
 
 var i;
-    for (i=1; i<21; i++) {
+    for (i=1; i<101; i++) {
         if (i % 3 == 0 && i % 5 == 0) {
-            alert('FizzBuzz')
+            console.log('FizzBuzz')
         } else {
             if (i % 5 == 0) {
-                alert('Buzz')
+                console.log('Buzz')
             } else {
                 if (i % 3 == 0) {
-                    alert('Fizz')
+                    console.log('Fizz')
                 } else {
-                    alert(i);
+                    console.log(i);
                 }
             }
         }
