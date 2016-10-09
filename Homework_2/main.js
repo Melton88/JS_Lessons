@@ -15,20 +15,15 @@
 // var z = 2;
 // var x = 1 + (z *= 2); // 5
 
-var i;
-    for (i=1; i<101; i++) {
-        if (i % 3 == 0 && i % 5 == 0) {
-            console.log('FizzBuzz')
-        } else {
-            if (i % 5 == 0) {
-                console.log('Buzz')
-            } else {
-                if (i % 3 == 0) {
-                    console.log('Fizz')
-                } else {
-                    console.log(i);
-                }
-            }
-        }
+
+for (var i = 1; i <= 100; i++) {
+    var a = '';
+    if (i % 3 == 0) {
+        a = 'Fizz';
     }
+    if (i % 5 == 0) {
+        a += 'Buzz';
+    }
+    console.log(a || i);
+}
 
