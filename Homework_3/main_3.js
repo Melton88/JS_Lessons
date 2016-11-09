@@ -26,10 +26,10 @@
  */
 
 var z = prompt('Введите количество клеток', '8');
-for (var a = 1; a <= z; a++) {
+for (var a = 0; a < z; a++) {
     var desk = '';
-    for (var b = 1; b <= z; b++) {
-        (a % 2 == 0) ? ((b % 2 == 0) ? desk += '\u25A0' : desk += ' ') : ((b % 2 == 0) ? desk += ' ' : desk += '\u25A0')
+    for (var b = 0; b < z; b++) {
+        ((a+b) % 2 == 0) ? desk += ' ' : desk += '\u25A0';
     }
     console.log(desk);
 }
